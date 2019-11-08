@@ -1,0 +1,819 @@
+<!DOCTYPE HTML>
+<html lang="hu">
+<head>
+<meta name="author" content="NAGY BALAZS DANIEL">
+<meta name="description" content="XXXXXXXXXXXXXXXX">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="geo.region" content="HU">
+<meta name="robots" content="all">
+<meta property="og:locale" content="hu_HU">
+<meta property="og:title" content="XXXXXXXXXXXXXXXXXX"/>
+<meta property="og:description" content="XXXXXXXXXXXXXXXXXX"/>
+<meta charset="utf-8">
+<meta name="keywords" content="XXXXXXX , XXXXXXX , XXXXXX">
+<script src="https://code.jquery.com/jquery-1.6.4.js"></script>
+<script src="https://kit.fontawesome.com/e8d3c39a19.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+<link href="/css/animate.css-master/animate.css" rel="stylesheet">
+<link href="/css/animate.css-master/animate.min.css" rel="stylesheet">
+<!--<title> TITLE </title>-->
+<style> 
+    html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Nunito', sans-serif;
+        position: relative;
+        min-height: 100%;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0 0 800px;
+        min-height: 100%;
+        min-width: 100%;
+        background-image: url("/images/bck.jpg");
+        max-width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        position: relative;
+    }
+    
+    header {
+        background-image: url("/images/background.png");
+        width: 100%;
+        display:block;
+        overflow:hidden;
+        height: 100px;
+    
+    }
+    
+    .header {
+        background-color: #FFFDF0;
+    
+    }
+    
+    .hdrimg {
+        float:left;
+        width: auto;
+        height: 60px;
+        margin-top: 20px;
+        margin-right: 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+     
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+     
+            
+    }
+    
+    #container {
+        min-height: calc(100vh - 500px);
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .srcimg {
+        float:left;
+        width: 1.8%;
+        height: auto;
+        margin-top: 1.05%;
+        margin-left: 4%;
+        
+    }
+    
+    .hdrtxt1 {
+        position: absolute;
+        right: 27%;
+        top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    
+    .hdrtxt2 {
+        position: absolute;
+        right: 16%;
+        top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    
+    .hdrtxt3 {
+        position: absolute;
+        right: 5%;
+        top: 20px;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+    
+    .headertext {
+        display: inline-block;
+        color: #040ADB;
+        font-weight: bold;
+        transition-duration: 1s;
+        -webkit-transition-duration: 1s;
+        font-size: 18px;
+       
+    }
+    
+    .headertext:hover {
+        animation: bounce 1s;
+        -webkit-animation: pulse 1s;
+    }
+    
+    .index {
+        font-family: 'Montserrat', sans-serif;
+        transition-duration: 5s;
+        -webkit-transition-duration: 5s;
+        text-align: center;
+    }
+    
+    .index:hover {
+        color: snow;
+    }
+    
+    .footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        background-color: #1C1C1C;
+        color: snow;
+        height: 200px;
+    }
+    
+    .elerhetosegek {
+        font-size: 110%;
+        margin-left: 3%;
+        margin-top: 1.4%
+    }
+    
+    #phn {
+        font-size: 110%;
+        margin-left: 3%;
+    }
+    
+    #mail {
+        font-size: 110%;
+        margin-left: 3%;
+    }
+    
+    #location {
+        font-size: 110%;
+        margin-left: 3%;
+        color: snow;
+        text-decoration: none;
+        transition-duration: 1s;
+        -webkit-transition-duration: 1s;
+    }
+    
+    #location:hover {
+        color: gray;
+    }
+    
+    #loc {
+        text-decoration: none;
+    }
+    
+    .indextext {
+        margin-left: 1%;
+        text-align: left;
+    }
+    
+    .brect {
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        background: rgba(255, 253, 240, 0.2);
+        height: 100px;
+        transition: 0.25s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: solid 1px #040ADB;
+        border-right: none;
+        border-left: none;
+    }
+    
+    .b {
+        display: inline;
+        width: 16.66%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        float: left;
+        vertical-align: middle;
+        height: 100%;
+        top: 50%;
+        transition-duration: 0.35s;
+        -webkit-transition-duration: 0.35s;
+        
+    }
+    
+    
+    .bp {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin: 0;
+        transform: translate(-50%, -50%);
+        color: #040ADB;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        -webkit-transition-duration: 0;
+
+    }
+    
+    
+    .b:hover {
+        background: rgba(60, 60, 60, 0.5);
+        border-bottom: solid 5px #040ADB;
+    }
+    
+    #b4 {
+        background: rgba(60, 60, 60, 0.5);
+        border-bottom: solid 5px #040ADB;
+    }
+    
+    #rct1 {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        overflow-x: hidden;
+        height: 40%;
+        background: #F2F0E4;
+        bottom: 10%;
+        
+    }
+    
+    #rct2 {
+        display: inline-block;
+        position: absolute;
+        width: 75%;
+        overflow-x: hidden;
+        height: 45%;
+        background: #FFFDF0;
+        bottom: 30%;
+        left: 12.5%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        animation: slideInUp 1s;
+        -webkit-animation: slideInUp 1s;
+    }
+    
+    #mester {
+        height: 60%;
+        width: 40%;
+        position: absolute;
+        display: inline;
+        vertical-align: middle;
+        top: 20%;
+        left: 5%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .rcttxt1 {
+        position: absolute;
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+        right: 8%;
+        top: 20%;
+        
+    }
+    
+    .rcttxt2 {
+        position: absolute;
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+        right: 8%;
+        top: 38%;
+        
+    }
+    
+    .rcttxt3 {
+        position: absolute;
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+        right: 8%;
+        top: 60%;
+    }
+    
+    .rctcontent {
+        animation: fadeIn 1.5s;
+        -webkit-animation: fadeIn 1.5s;
+    }
+    
+    .hdrbars {
+        display: none;
+    }
+    
+    #navigation {
+        background-color: rgba(60, 60, 60, 0.5);
+        display: none;
+        width: 100%;
+        min-height: calc(100vh + 400px);
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 100px;
+        animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
+        
+    }
+    
+    .navtext {
+        text-align: center;
+        height: 80px;
+        font-family: 'Montserrat', sans-serif;
+        position: relative;
+        top: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+    
+    
+    .navtxt1 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        border-top: solid 2px #040ADB;
+        transition-duration: 1s;
+        -webkit-transition-duration: 1s;
+        
+    }
+    
+    .navtxt2 {
+        margin: 0;
+        padding: 0;
+        height: 80px;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        border-bottom: solid 2px #040ADB;
+        border-top: solid 2px #040ADB;
+        transition-duration: 1s;
+        -webkit-transition-duration: 1s;
+    }
+    
+    .navtxt3 {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: inline-block;
+        height: 80px;
+        position: absolute;
+        top: 160px;
+        border-bottom: solid 2px #040ADB;
+        transition-duration: 1s;
+        -webkit-transition-duration: 1s;
+    }
+    
+    #opener {
+        display: none;
+    }
+    
+    #models {
+        display: none;
+    }
+    
+@media screen and (max-width: 768px) {
+    
+    #container {
+        min-height: 20vh;
+        height: 20vh;
+    }
+    
+    #navigation {
+        background-image: url("/images/phone_background.png");
+        display: none;
+        width: 100%;
+        min-height: 242px;
+        height: 242px;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 100px;
+        z-index: 99999;
+        overflow-y: hidden;
+    }
+
+    .navtxt1 {
+        display: inline-block;
+    }
+    
+    .navtxt2 {
+        display: inline-block;
+    }
+    
+    .navtxt3 {
+        display: inline-block;
+    }
+    
+    .hdrtxt1 {
+        display: none;
+    }
+    
+    .hdrtxt2 {
+        display: none;
+    }
+    
+    .hdrtxt3 {
+        display: none;
+    }
+    
+    .hdrbars {
+        display: inline-block;
+        position: absolute;
+        height: 20px;
+        right: 5%;
+        top: 40px;
+        width: auto;
+        color: #040ADB;
+        cursor: pointer;
+    }
+    
+    .hdrimg {
+        height: 40px;
+        width: auto;
+        top: 30px;
+        margin: 0;
+        position: absolute;
+    }
+    
+    a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    a:visited {
+        color: #040ADB;
+    }
+    
+    .footer {
+        font-size: 14px;
+    }
+    
+    .elerhetosegek {
+        margin-top: 3%;
+    }
+    
+    .navtxt1:hover {
+        background-color: rgba(60, 60, 60, 0.5);
+    }
+    
+    .navtxt2:hover {
+        background-color: rgba(60, 60, 60, 0.5);
+    }
+    
+    .navtxt3:hover {
+        background-color: rgba(60, 60, 60, 0.5);
+    }
+    
+    #mh {
+        font-size: 45px;
+        top: 11.5%;
+    }
+    
+    .brect {
+        display: none;
+    }
+    
+    .rectangle {
+        height: 75%;
+    }
+    
+    #m1 {
+        margin-bottom: 15%;
+        padding: 12% 8% 0 8%;
+    }
+    
+    #m2 {
+        margin-bottom: 15%;
+    }
+    
+    #m3 {
+        margin-bottom: 15%;
+    }
+    
+    #m4 {
+        margin-bottom: 15%;
+    }
+    
+    #m5 {
+        margin-bottom: 15%;
+    }
+    
+    #m6 {
+        
+    }
+    
+    #opener {
+        display: table;
+        width: 100%;
+        top: 100px;
+        height: 50px;
+        background: #1C1C1C;
+        vertical-align: middle;
+        animation: fadeIn 1s;
+        -webkit-animation: fadeIn 1s;
+    }
+    
+    #pOpener {
+        color: #FFFDF0;
+        text-align: center;
+        font-size: 15px;
+        width: 100%;
+        padding-left: 17%;
+        
+    }
+    
+    #sort {
+        width: 10%;
+        margin-left: 25%;
+        
+    }
+    
+    .modText {
+        padding: 0;
+        font-size: 15px;
+        margin-top: 17.5px;
+        color: #FFFDF0;
+    }
+    
+    #models {
+        display: none;
+        animation: fadeIn 0.5s;
+        -webkit-animation: fadeIn 0.5s;
+    }
+    
+    #mod1 {
+        display: table;
+        width: 100%;
+        vertical-align: middle;
+        text-align: center;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        background-color: #1C1C1C;
+    }
+    
+    #mod2 {
+        display: table;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        background-color: #1C1C1C;
+    }
+    
+    #mod3 {
+        display: table;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        background-color: #1C1C1C;
+    }
+    
+    #mod4 {
+        display: table;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        background-color: #1C1C1C;
+    }
+    
+    #mod5 {
+        display: table;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        background-color: #1C1C1C;
+    }
+    
+    #mod6 {
+        display: table;
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        background-color: #1C1C1C;
+    }
+    
+    #rct1 {
+        display: none;
+    
+    }
+    
+    #rct2 {
+        width: 100%;
+        left: 0;
+        right: 0;
+        overflow-x: hidden;
+        height: auto;
+        top: 150px;
+        bottom: 200px;
+        
+    }
+    
+    #mester {
+        height: 27%;
+        width: 80%;
+        position: absolute;
+        display: inline;
+        vertical-align: middle;
+        top: 7%;
+        left: 10%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .rcttxt1 {
+        position: absolute;
+        display: inline-block;
+        width: 90%;
+        text-align: center;
+        right: 5%;
+        top: 42%;
+        
+    }
+    
+    .rcttxt2 {
+        position: absolute;
+        display: inline-block;
+        width: 90%;
+        text-align: center;
+        right: 5%;
+        top: 60%;
+        
+    }
+    
+    .rcttxt3 {
+        position: absolute;
+        display: inline-block;
+        width: 90%;
+        text-align: center;
+        right: 5%;
+        top: 80%;
+    }
+</style>
+</head>
+
+<body>
+    
+<div class="header"><header>
+    <div> <a href="/sites/index.html"><img class="hdrimg" src="/images/logo.png" alt="logo" title="logo"></a></div>
+    <div class="hdrtxt1"> <a href="/sites/about.html"> <p class="headertext">Rólunk</p> </a></div>
+    <div class="hdrtxt2"> <a href="/sites/models.html"> <p class="headertext">Modellek</p> </a></div>
+    <div class="hdrtxt3"> <a href="/sites/contacts.html"> <p class="headertext">Kapcsolat</p> </a></div>
+<div class="hdrbars"> <i class="fas fa-bars"></i></div>
+</header></div>
+    
+    
+    
+<script>
+$(document).ready(function(){
+  $(".hdrbars").click(function(){
+  $('#navigation').toggle();    
+  $('#mh').toggle();       
+  $('#opener').toggle();
+  $('#rct2').toggle();    
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#opener").click(function(){
+  $('#models').toggle();
+  $('#mh').toggle();
+  $('#rct2').toggle();
+      
+});
+});
+</script>
+
+<div id="container"><body>
+<div id="navigation">
+<div class="navtxt1"><a href="/sites/about.html"><p class="navtext">Rólunk</p></a></div>
+<div class="navtxt2"><a href="/sites/models.html"><p class="navtext">Modellek</p></a></div>
+<div class="navtxt3"><a href="/sites/contacts.html"><p class="navtext">Kapcsolat</p></a></div>
+</div>
+
+
+<div id="opener">
+<p id="pOpener">Mester<i id="sort" class="fas fa-sort-down"></i></p>
+</div>
+
+
+<div id="models">
+<div id="mod1"><a href="/models/bazis-modell.html"><p class="modText">Bázis</p></a></div>
+<div id="mod2"><a href="/models/koncert-modell.html"><p class="modText">Koncert</p></div>
+<div id="mod3"><a href="/models/antique-modell.html"><p class="modText">Antique</p></div>
+<div id="mod4"><a href="/models/mester-modell.html"><p class="modText">Mester</p></div>
+<div id="mod5"><a href="/models/mester-exkluziv-modell.html"><p class="modText">Mester „Exkluzív”</p></div>
+<div id="mod6"><a href="/models/mester-excellent-modell.html"><p class="modText">Mester „Excellent”</p></div>
+</div>
+    
+<div class="brect">
+    <a href="/models/bazis-modell.html"><div id="b1" class="b"><p class="bp">Bázis </div></a>
+    <a href="/models/koncert-modell.html"><div id="b2" class="b"><p class="bp">Koncert </div></a>
+    <a href="/models/antique-modell.html"><div id="b3" class="b"><p class="bp">Antique </div></a>
+    <a href="/models/mester-modell.html"><div id="b4" class="b"><p class="bp">Mester </div></a>
+    <a href="/models/mester-exkluziv-modell.html"><div id="b5" class="b"><p class="bp">Mester „Exkluzív”</div></a>
+    <a href="/models/mester-excellent-modell.html"><div id="b6" class="b"><p class="bp">Mester „Excellent”</div></a>
+    </div>
+
+
+
+<div class="content">
+<div id="rct1"></div>
+<div id="rct2"><div class="rctcontent">
+<img id="mester" alt="Mester-modell" src="/images/Mester.jpg">
+<div class="rcttxt1"><p>Ennél a modellnél különös gondossággal válogatott bambuszcsöveket használnak alapanyagként</p></div>
+<div class="rcttxt2"><p>Különleges technológia során a csövek belső felületét polírozzák és keményítik, ezáltal a hangszer extrém könnyen szólal meg</p></div>
+    <div class="rcttxt3"><p>A talp kialakítása szorosan illeszkedik a csövek aljához, ami a hangszernek  egy különlegesen elegáns kinézetet ad</p></div></div>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</body></div>
+    
+
+
+
+    
+    
+<div class="footer"><footer>
+    
+<h1 class="elerhetosegek"> Elérhetőségek:</h1>
+<p id="phn"> <i class="material-icons">phone</i> +36 209 341 341</p>
+<p id="mail"> <i class="material-icons">mail_outline</i> borbasdr@t-online.hu</p>
+<a target="_blank" href="https://www.google.hu/maps/place/Alsónémedi,+Haraszti+út+126,+2351/@47.3255295,19.1423494,16z/data=!4m5!3m4!1s0x4741ec1be4c246d9:0xa1b78afaa167cfd3!8m2!3d47.325624!4d19.146598" id="loc"> <p id="location"><i class="material-icons">room</i>2351 Alsónémedi Haraszti út 126/II.</p></a>
+    
+    </footer></div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
